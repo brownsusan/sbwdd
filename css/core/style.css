@@ -53,17 +53,11 @@ body {
 	margin: 0 auto;
 }
 
-#cta img {
-	width: 100%;
-	position: relative;
-	z-index: -1;
-}
-
 #cta{
 	width: 100%;
-	min-height: 500px;
 	background: url('/img/ct.jpg');
 	background-size: cover;
+	min-height: 500px;
 }
 
 #cta p {
