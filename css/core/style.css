@@ -43,6 +43,15 @@ nav {
 	float: right;
 }
 
+header a{
+	color: #555;
+	text-decoration: none;
+	display: inline-block;
+	/*width: 100px;*/
+	text-align:center;
+	line-height: 50px;
+}
+
 body {
 	font-family: Helvetica;
 	color: #222;
@@ -61,10 +70,9 @@ body {
 }
 
 #cta p {
-	font-size: 18px;
 	position: relative;
 	top: 250px;
-	background: red;
+	/*background: red;*/
 	margin: 0 auto;
 	line-height: 1.5em;
 	text-transform: uppercase;
@@ -72,11 +80,23 @@ body {
 
 #cta span {
 	display: block;
-	width: 81.770833333333%;
+	/*width: 87.5%;*/
 	margin: 0 auto;
+	font-size: 39px;
+	text-align: center;
+	line-height: 1.2em;
 }
 
-#cta span:nth-child(2) {
-	font-size: 38px;
-	line-height: 1.2em;
+#personal-intro span:first-child{
+	color: blue;
+}
+
+#personal-intro{
+	margin-top: 40px;
+}
+
+footer{
+	height: 50px;
+	background: #ebebeb;
+	margin-top: 40px;
 }
