@@ -45,6 +45,7 @@ nav {
 
 body {
 	font-family: Helvetica;
+	color: #222;
 }
 
 #content {
@@ -61,12 +62,13 @@ body {
 #cta p {
 	font-size: 18px;
 	max-width: 960px;
-	margin-top: 240px;
 	display: block;
+	position: relative;
+	top: 200px;
+	background: red;
 	margin: 0 auto;
 	line-height: 1.5em;
 	text-transform: uppercase;
-	min-height: 516px;
 }
 
 #cta span {
@@ -76,6 +78,6 @@ body {
 }
 
 #cta span:nth-child(2) {
-	font-size: 35px;
+	font-size: 38px;
 	line-height: 1.2em;
 }
