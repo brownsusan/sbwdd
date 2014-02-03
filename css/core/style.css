@@ -1,0 +1,14 @@
+header{
+	height: 50px;
+	width: 100%;
+}
+
+nav{
+	/*width: 500px;*/
+	float: right;
+}
+
+#cta{
+	width: 100%;
+	background-image: url('/img/ct.jpg');
+}
