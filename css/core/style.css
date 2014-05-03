@@ -153,10 +153,10 @@ input {
 	width: 430px;
 	height: 430px;
 	border-radius: 300px;
-	margin-top: -430px;
+	/*margin-top: -430px;*/
 }
 
 .project img:hover{
-	 -webkit-filter: blur(3px) grayscale(50%);
+	 /*-webkit-filter: blur(3px) grayscale(50%);*/
 	 /*-webkit-transform: scale(0.95);*/
 }
