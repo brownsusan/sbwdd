@@ -3,56 +3,98 @@
 
 	<head>
 
-		<title>Susan Brown WDD</title>
+		<title>Susan Brown | Web Designer and Developer | Orlando</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-		<link href="css/core/style.css" type="text/css" rel="stylesheet" />
 		<link href="css/vendor/skeleton/layout.css" type="text/css" rel="stylesheet" />
 		<link href="css/vendor/skeleton/skeleton.css" type="text/css" rel="stylesheet" />
-
+		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+		<link href="css/core/style.css" type="text/css" rel="stylesheet" />
 	</head>
 
 	<body>
 		<header>
 			<div class="container">
-				<a href="#"><img src="img/logo.png"/></a>
 				<nav>
-					<a class="two columns" href="#">home</a>
-					<a class="two columns" href="#">portfolio</a>
-					<a class="two columns" href="#">skills</a>
-					<a class="two columns" href="#">resume</a>
-					<a class="two columns" href="#">contact</a>
-					<!-- <a href="#">client login</a> -->
+					<a href="/index.html">Home</a>
+					<a href="/portfolio.html">Portfolio</a>
+					<a href="/resume.html">Resume</a>
 				</nav>
+				<h1 id="index"><span>I'm Susie Brown.</span> I design and build web projects of all <span>shapes</span> and <span>sizes</span>.</h1>
 			</div>
 		</header>
-		<div id="cta">
-			<p class="container">
-				<span>I <strong>design</strong> and <strong>build</strong> effective web solutions of all <strong>shapes</strong> and <strong>sizes</strong>.</span>
-			</p>
-		</div>
-		<div id="content" class="container">
-			<div id="personal-intro">
-				<img class="four columns alpha" src="/img/me.jpg"/>
-				<p class="twelve columns omega">
-					<span>Hi there!</span>
-					<br/>
-					My name is Susan Brown. I am a web designer and developer currently based out of Orlando, Florida. I am pursuing my bachellors degree in Web Design and Development from Full Sail University.
-					<br/>
-					<br/>
-					Reach out via email at <strong>susanbrownwdd@gmail.com</strong>
-					<br/>
-					or by phone at <strong>248-880-3127</strong>
-				</p>
+		<div class="container">
+			<div class="row">
+				<h2>This is my process.</h2>
+				<div class="four columns alpha process">
+					<img src="img/planning.png" />
+					<h3>Planning</h3>
+					<div class="info-box"></div>
+				</div>
+				<div class="four columns process">
+					<img src="img/design.png" />
+					<h3>Design</h3>
+					<div class="info-box"></div>
+				</div>
+				<div class="four columns process">
+					<img src="img/dev.png" />
+					<h3>Development</h3>
+					<div class="info-box"></div>
+				</div>
+				<div class="four columns omega process">
+					<img src="img/launch.png" />
+					<h3>Testing & Launch</h3>
+					<div class="info-box"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="ten columns alpha contact">
+					<h2>Contact Me</h2>
+					<h3>You can find me here:</h3>
+					<div>
+						<span>Susie Brown</span>
+						<span>sbrownwdd@gmail.com</span>
+						<span>248&middot;880&middot;3127</span>
+					</div>
+					<span>or</span>
+					<h3>Drop me a line.</h3>
+					<form>
+						<label>Your Name</label>
+						<input type="text" placeholder="John Doe"/>
+						<label>Email</label>
+						<input type="text" placeholder="john.doe@gmail.com"/>
+						<label>Phone Number</label>
+						<input type="tel" placeholder="248-555-1212"/>
+						<label>Inquiry</label>
+						<textarea>Yo</textarea>
+						<button>
+							Send
+						</button>
+					</form>
+				</div>
+				<div class="six columns omega about-me">
+					<h2>Who Is Susie Brown?</h2>
+					<img src="img/me.png" />
+					<p>
+						Mover, Shaker, Designer, Developer, Dog Lover, Student.
+					</p>
+					<span>&middot;&middot;&middot;&middot;&middot;</span>
+					<p>
+						Born and raised just north of Detroit. Currently working out of Orlando, and pursuing a BS in Web Design And Development at Full Sail University. Expected graduation date: June of 2014.
+					</p>
+				</div>
 			</div>
 		</div>
-		<footer>
-			<p>
-				Susan Brown Footer Bullshit
-			</p>
+		<footer id="footer">
+			<div class="container">
+				<p>
+					Susan Brown Footer Bullshit
+				</p>
+			</div>
 		</footer>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script type="text/javascript" src="/js/core/main.js"></script>
+
 	</body>
 </html>
