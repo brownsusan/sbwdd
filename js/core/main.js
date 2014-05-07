@@ -1,8 +1,5 @@
 $(document).ready(function() {
-	$('.process').find('h3').circleType({
-		'radius' : 384,
-		'fluid' : true
-	});
+	$('.process').find('h3').arctext({radius: 100, dir : -1});
 });
 
 $(document).on('mouseenter', '.project', function(event) {
