@@ -78,8 +78,12 @@ nav {
 	padding: 10px;
 }
 
-nav a {
+nav ul {
 	float: right;
+}
+
+nav li {
+	float: left;
 	display: block;
 	width: 100px;
 	text-align: center;
@@ -144,19 +148,31 @@ input {
 	display: block;
 }
 
-.project img{
+.project img {
 	border-radius: 300px;
+	position: relative;
 }
 
-.project-details{
+.project-details {
 	display: none;
 	width: 430px;
 	height: 430px;
+	background: red;
 	border-radius: 300px;
+	position: absolute;
+	z-index: 999999;
+	margin: 10px;
 	/*margin-top: -430px;*/
 }
 
-.project img:hover{
-	 /*-webkit-filter: blur(3px) grayscale(50%);*/
-	 /*-webkit-transform: scale(0.95);*/
+.project img:hover {
+	/*-webkit-filter: blur(3px) grayscale(50%);*/
+	/*-webkit-transform: scale(0.95);*/
+}
+
+.process h3 {
+	font: 26px Monaco, MonoSpace;
+	position: absolute;
+	top: 0;
+	transform-origin: bottom center;
 }
