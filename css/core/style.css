@@ -53,19 +53,19 @@ html {
 	color: #333;
 	background-color: rgba(0,0,0,0.1);
 }
-header{
+header {
 	min-height: 100px;
 }
 
-header h1{
+header h1 {
 	float: left;
 }
 
-header a{
+header a {
 	float: right;
 }
 
-header h1, header .site-link{
+header h1, header .site-link {
 	height: 50px;
 	line-height: 50px;
 	margin: 0;
@@ -161,22 +161,21 @@ input {
 	display: block;
 }
 
-.project{
-	width: 200px;
-	height: 200px;
+.project {
+	width: 220px;
+	height: 220px;
 }
 
-
-.project img{
-	width: 200px;
-	height: 200px;
+.project img {
+	width: 220px;
+	height: 220px;
 	position: relative;
 }
 
 .project-details-container {
 	display: none;
-	width: 200px;
-	min-height: 200px;
+	width: 220px;
+	min-height: 220px;
 	background: rgba(255,255,255,.9);
 	overflow: hidden;
 	text-align: center;
@@ -186,13 +185,16 @@ input {
 	margin: 10px;
 }
 
-.project-details-content{
+.project-details-content {
 	display: none;
 	margin: auto;
 	height: 100px;
 	/*border-radius: 300px;*/
 	position: absolute;
-	top: 0; left: 0; bottom: 0; right: 0;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
 }
 
 .process h3 {
@@ -230,28 +232,27 @@ input {
 	margin-top: 0;
 }
 
-#resume-contact{
+#resume-contact {
 	display: block;
 	margin: 10px 0 0 0;
 }
 
-.skills ul li{
+.skills ul li {
 	height: 35px;
 	line-height: 35px;
 }
 
-h3{
+h3 {
 	font-weight: bold;
 }
 
-.skill-rep{
+.skill-rep {
 	margin: 0 !important;
-	/*width: 120px;*/
 	float: right;
 	display: inline-block;
 }
 
-.skill-rep .full, .skill-rep .empty{
+.skill-rep .full, .skill-rep .empty {
 	display: inline-block;
 	width: 10px;
 	height: 10px;
@@ -260,10 +261,49 @@ h3{
 	float: left;
 }
 
-.skill-rep .full{
+.skill-rep .full {
 	background: rgba(143, 212, 255, 1);
 }
 
-.skill-rep .empty{
+.skill-rep .empty {
 	background: rgba(0,0,0,.3);
+}
+
+@media all and (max-width: 959px) and (min-width: 768px) {
+	.project {
+		width: 172px;
+		height: 172px;
+	}
+
+	.project img {
+		width: 172px;
+		height: 172px;
+		position: relative;
+	}
+
+	.project-details-container {
+		display: none;
+		width: 172px;
+		min-height: 172px;
+	}
+}
+
+@media all and (max-width: 767px) {
+	.project {
+		width: 300px;
+		height: 300px;
+		margin-bottom: 10px !important;
+	}
+
+	.project img {
+		width: 300px;
+		height: 300px;
+		position: relative;
+	}
+
+	.project-details-container {
+		display: none;
+		width: 300px;
+		min-height: 300px;
+	}
 }
