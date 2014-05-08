@@ -40,6 +40,28 @@ table {
 /* ---------------------------------------------------------- */
 /* ---------------------------------------------------------- */
 
+a{
+	text-decoration: none;
+	color: #333333;
+}
+
+a:visited{
+	text-decoration: none;
+	color: #333333;
+}
+
+
+a:hover{
+	text-decoration: underline;
+	color: #182C69;
+}
+
+a:active{
+	color: #182C69;
+}
+
+
+
 body {
 	clear: both;
 	line-height: 1.5em;
