@@ -53,22 +53,35 @@ html {
 	color: #333;
 	background-color: rgba(0,0,0,0.1);
 }
+header{
+	min-height: 100px;
+}
+
+header h1{
+	float: left;
+}
+
+header a{
+	float: right;
+}
+
+header h1, header .site-link{
+	height: 50px;
+	line-height: 50px;
+	margin: 0;
+}
+
+header, footer {
+	/*background: #8fd4ff;*/
+	background: rgba(143, 212, 255, .5);
+	/*background: #e6e6e6;*/
+	/*background: #B4E8C3;*/
+	/*background: rgba(180,232,195,0.5);*/
+}
 
 footer {
 	width: 100%;
 	height: 150px;
-}
-
-header {
-	/*background: #e6e6e6;*/
-	/*background: #B4E8C3;*/
-	background: rgba(180,232,195,0.5);
-}
-
-footer {
-	background: rgba(255,190,165,0.5);
-	/*background: #e6e6e6;*/
-	/*background: #C6C8FF;*/
 }
 
 nav {
@@ -92,7 +105,7 @@ nav li {
 h1 {
 	font-size: 40px;
 	font-family: 'Pacifico', 'cursive';
-	color: rgba(0,0,0,0.7);
+	color: #444;
 	margin-bottom: 25px;
 }
 
@@ -100,7 +113,7 @@ h2 {
 	font-size: 30px;
 	font-family: 'Pacifico', 'sans-serif';
 	color: #8fd4ff;
-	margin-bottom: 25px;
+	margin-bottom: 10px;
 	margin-top: 10px;
 }
 
@@ -148,22 +161,38 @@ input {
 	display: block;
 }
 
-.project img {
+.project-img-container{
 	border-radius: 300px;
+	overflow: hidden;
+}
+
+.project img {
 	position: relative;
 }
 
-.project-details {
+.project-details-container {
 	display: none;
 	width: 430px;
 	height: 430px;
-	background: red;
+	background: rgba(255,255,255,.6);
+	overflow: hidden;
+	text-align: center;
 	border-radius: 300px;
 	position: absolute;
 	z-index: 999999;
 	margin: 10px;
 	/*margin-top: -430px;*/
 }
+
+.project-details-content{
+	display: none;
+	width: 350px;
+	height: 350px;
+	border-radius: 300px;
+	padding: 150px 50px;
+	position: absolute;
+}
+
 
 .project img:hover {
 	/*-webkit-filter: blur(3px) grayscale(50%);*/
@@ -176,15 +205,69 @@ input {
 	margin: 0 auto;
 }
 
-.contact *{
+.contact * {
 	/*display: block;*/
 	margin: 10px 20px;
 }
 
-.contact h2{
-	margin : 20px;
+.contact h2 {
+	margin: 20px;
 }
 
-.contact input, .contact label{
+.contact input, .contact label {
 	margin: 0 0 10px;
+}
+
+.resume div {
+	margin: 30px 0;
+}
+
+.resume div div div {
+	margin: 10px 0;
+}
+
+.resume h2 {
+	height: 30px;
+}
+
+.resume .first {
+	margin-top: 0;
+}
+
+#resume-contact{
+	display: block;
+	margin: 10px 0 0 0;
+}
+
+.skills ul li{
+	height: 35px;
+	line-height: 35px;
+}
+
+h3{
+	font-weight: bold;
+}
+
+.skill-rep{
+	margin: 0 !important;
+	/*width: 120px;*/
+	float: right;
+	display: inline-block;
+}
+
+.skill-rep .full, .skill-rep .empty{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	margin: 1px;
+	float: left;
+}
+
+.skill-rep .full{
+	background: rgba(143, 212, 255, 1);
+}
+
+.skill-rep .empty{
+	background: rgba(0,0,0,.3);
 }
