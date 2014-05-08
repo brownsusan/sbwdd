@@ -161,42 +161,38 @@ input {
 	display: block;
 }
 
-.project-img-container{
-	border-radius: 300px;
-	overflow: hidden;
+.project{
+	width: 200px;
+	height: 200px;
 }
 
-.project img {
+
+.project img{
+	width: 200px;
+	height: 200px;
 	position: relative;
 }
 
 .project-details-container {
 	display: none;
-	width: 430px;
-	height: 430px;
-	background: rgba(255,255,255,.6);
+	width: 200px;
+	min-height: 200px;
+	background: rgba(255,255,255,.9);
 	overflow: hidden;
 	text-align: center;
-	border-radius: 300px;
+	border-radius: 50%;
 	position: absolute;
 	z-index: 999999;
 	margin: 10px;
-	/*margin-top: -430px;*/
 }
 
 .project-details-content{
 	display: none;
-	width: 350px;
-	height: 350px;
-	border-radius: 300px;
-	padding: 150px 50px;
+	margin: auto;
+	height: 100px;
+	/*border-radius: 300px;*/
 	position: absolute;
-}
-
-
-.project img:hover {
-	/*-webkit-filter: blur(3px) grayscale(50%);*/
-	/*-webkit-transform: scale(0.95);*/
+	top: 0; left: 0; bottom: 0; right: 0;
 }
 
 .process h3 {
