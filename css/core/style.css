@@ -41,6 +41,7 @@ table {
 /* ---------------------------------------------------------- */
 
 a{
+	font-size: 14px;
 	text-decoration: none;
 	color: #333333;
 }
@@ -67,16 +68,37 @@ body {
 	line-height: 1.5em;
 }
 
+h1 {
+	font-size: 30px;
+	font-family: 'Pacifico', 'cursive';
+	color: #444;
+	margin-bottom: 25px;
+}
+
+h2 {
+	font-size: 20px;
+	font-family: 'Pacifico', 'sans-serif';
+	color: #8fd4ff;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+h3{
+	font-weight: bold;
+}
+
 html {
 	min-height: 100%;
 	background-image: url('/img/brillant.png');
 	background-attachment: fixed;
 	font-family: 'Arial', 'Helvetica', 'sans-serif';
+	font-size: 14px;
 	color: #333;
 	background-color: rgba(0,0,0,0.1);
 }
 header {
 	min-height: 100px;
+	margin-bottom: 10px;
 }
 
 header h1 {
@@ -94,14 +116,11 @@ header h1, header .site-link {
 }
 
 header, footer {
-	/*background: #8fd4ff;*/
 	background: rgba(143, 212, 255, .5);
-	/*background: #e6e6e6;*/
-	/*background: #B4E8C3;*/
-	/*background: rgba(180,232,195,0.5);*/
 }
 
 footer {
+	display: none;
 	width: 100%;
 	height: 150px;
 }
@@ -124,21 +143,6 @@ nav li {
 	text-align: center;
 }
 
-h1 {
-	font-size: 40px;
-	font-family: 'Pacifico', 'cursive';
-	color: #444;
-	margin-bottom: 25px;
-}
-
-h2 {
-	font-size: 30px;
-	font-family: 'Pacifico', 'sans-serif';
-	color: #8fd4ff;
-	margin-bottom: 10px;
-	margin-top: 10px;
-}
-
 .process {
 	text-align: center;
 	/*margin: 0 auto;*/
@@ -154,31 +158,36 @@ h2 {
 	margin: 20px;
 }
 
-.info-box {
-	height: 150px;
-	width: 100%;
-	border: 2px solid #ebeced;
-	margin-top: 10px;
-	background: rgba(254,254,254,0.5);
-}
-
 .contact, .about-me {
-	height: 500px;
-	border: 2px solid #ebeced;
+	padding: 10px 0;
+	text-align: center;
+	border: 1px solid #ebeced;
 	background: rgba(254,254,254,0.5);
 }
 
-img {
-	margin: 10px;
+.about-me{
+	font-size: 14px;
 }
 
-.about-me {
-	text-align: center;
+.about-me img{
+	width: 80%;
+	margin: 10px auto;
 }
 
 input {
 	height: 30px;
-	width: 100%;
+}
+
+.contact textarea{
+	margin: 0;
+}
+
+input, textarea{
+	border: 1px solid #EBECED;
+	background: rgba(255,255,255,.5);
+	box-shadow: none;
+	padding: 5px;
+	width: 97.5%;
 	margin: 0 auto;
 	display: block;
 }
@@ -205,14 +214,13 @@ input {
 	border-radius: 50%;
 	position: absolute;
 	z-index: 999999;
-	margin: 10px;
+	/*margin: 10px;*/
 }
 
 .project-details-content {
 	display: none;
 	margin: auto;
 	height: 100px;
-	/*border-radius: 300px;*/
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -221,18 +229,9 @@ input {
 }
 
 .process h3 {
-	font-size: 16px;
-	width: 200px;
+	font-size: 14px;
+	width: 100%;
 	margin: 0 auto;
-}
-
-.contact * {
-	/*display: block;*/
-	margin: 10px 20px;
-}
-
-.contact h2 {
-	margin: 20px;
 }
 
 .contact input, .contact label {
@@ -265,12 +264,12 @@ input {
 	line-height: 35px;
 }
 
-h3 {
-	font-weight: bold;
+.skills ul li:nth-child(2n+1){
+	background: rgba(255,255,255,0.5);
 }
 
 .skill-rep {
-	margin: 0 !important;
+	margin: 10px 0 !important;
 	float: right;
 	display: inline-block;
 }
@@ -290,6 +289,10 @@ h3 {
 
 .skill-rep .empty {
 	background: rgba(0,0,0,.3);
+}
+
+ul{
+	margin: 0 0 10px;
 }
 
 @media all and (max-width: 959px) and (min-width: 768px) {
