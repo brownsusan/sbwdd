@@ -1,5 +1,12 @@
 $(document).ready(function(){
 	resizeImage();
+	var htmlHeight = $('html').height();
+	var windowHeight = $(window).height();
+	if(htmlHeight <= windowHeight){
+		$('footer').css('position', 'absolute').css('bottom', '0');
+	}
+	console.log(htmlHeight);
+	console.log(windowHeight);
 });
 
 $(window).resize(function() {
