@@ -13,3 +13,8 @@ var resizeImage = function(){
 	$('.project-details-container').width(projectImageWidth);
 	$('.project-details-container').height(projectImageWidth);
 };
+
+// $('.process').find('h3').arctext({
+	// radius : 100,
+	// dir : -1
+// });
