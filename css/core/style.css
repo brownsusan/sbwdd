@@ -96,7 +96,7 @@ h1, h2, h3, a, footer{
 h1 {
 	font-size: 25px;
 	font-weight: 100;
-	color: rgba(255,255,255,1);
+	/*color: rgba(255,255,255,1);*/
 	margin-bottom: 25px;
 }
 
@@ -287,7 +287,7 @@ input, textarea {
 	font-family: 'Helvetica', 'Arial', 'sans-serif';
 	font-size: 24px;
 	line-height: 1.5em;
-	color: white;
+	color: #333;
 	font-weight: lighter;
 }
 
