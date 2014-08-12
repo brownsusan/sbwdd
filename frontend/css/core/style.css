@@ -96,14 +96,14 @@ h1, h2, h3, a, footer{
 h1 {
 	font-size: 25px;
 	font-weight: 100;
-	/*color: rgba(255,255,255,1);*/
+	color: rgba(255,255,255,1);
 	margin-bottom: 25px;
 }
 
 h2 {
 	font-size: 20px;
 	text-align: center;
-	color: rgba(247,92,56,1);
+	color: rgba(71, 36, 69, 1);
 	line-height: 1.5em;
 	margin-bottom: 10px;
 	margin-top: 10px;
@@ -118,6 +118,7 @@ html {
 	background-color: rgba(0,0,0,0.1);
 }
 header {
+	color: rgba(255,255,255,1);
 	min-height: 150px;
 	margin-bottom: 20px;
 }
@@ -139,8 +140,7 @@ header h1, header .site-link {
 }
 
 header, footer {
-	/*background : #ed5100;*/
-	background: rgba(247,92,56,.8);
+	background: rgba(0,0,0,.2);
 }
 
 footer {
@@ -177,8 +177,7 @@ nav ul {
 	/*margin: 0 auto;*/
 }
 
-.contact, .about-me {
-	text-align: center;
+.contact, .about-me, .portfolio {
 	background: rgba(254,254,254,0.5);
 }
 
@@ -216,7 +215,7 @@ input, textarea {
 
 .project img {
 	width: 100%;
-	border-radius: 51%;
+	border-radius: 1px;
 	position: relative;
 }
 
@@ -224,13 +223,13 @@ input, textarea {
 	background: rgba(85,85,85,0.8);
 	overflow: hidden;
 	text-align: center;
-	border-radius: 50%;
+	border-radius: 1px;
 	position: absolute;
 	z-index: 999999;
 }
 
 .project-details-content {
-	color: white;
+	color: rgba(255,255,255,1);
 	font-size: 12px;
 	margin: auto;
 	height: 100px;
@@ -287,7 +286,6 @@ input, textarea {
 	font-family: 'Helvetica', 'Arial', 'sans-serif';
 	font-size: 24px;
 	line-height: 1.5em;
-	color: #333;
 	font-weight: lighter;
 }
 
@@ -332,7 +330,7 @@ input, textarea {
 }
 
 .skill-rep .full {
-	background: rgba(247,92,56,1);
+	background: rgba(71, 36, 69, 1);
 	/*background: rgba(143, 212, 255, 1);*/
 }
 
